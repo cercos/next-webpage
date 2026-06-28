@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="4chan-neXT is an actively maintained 4chan X userscript fork with compatibility fixes, UI improvements, and fork-specific features."
+    >
+    <title>4chan-neXT // userscript</title>
+    <link rel="icon" href="assets/icon-trimmed.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="https://github.com/cercos/4chan-neXT" aria-label="4chan-neXT on GitHub">
+        <img src="assets/icon-trimmed.png" alt="" width="34" height="42">
+        <span class="brand-name">4chan-ne<b>XT</b></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="https://github.com/cercos/4chan-neXT/releases">Releases</a>
+        <a href="https://github.com/cercos/4chan-neXT/blob/project-neXT/docs/user-guide.md">Guide</a>
+        <a href="https://github.com/cercos/4chan-neXT/issues">Issues</a>
+        <a class="nav-cta" href="https://github.com/cercos/4chan-next/releases/latest/download/4chan-neXT.user.js">Install</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <span class="hero-mark" aria-hidden="true"><img src="assets/icon-trimmed.png" alt=""></span>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal style="--d: 0">
+            <span class="prompt">&gt;</span> userscript for anonymous imageboards
+          </p>
+          <h1 data-reveal style="--d: 1">
+            4chan-ne<span class="x">XT</span><span class="caret" aria-hidden="true"></span>
+          </h1>
+          <p class="lede" data-reveal style="--d: 2">
+            An actively maintained 4chan&nbsp;X fork with compatibility fixes, UI
+            improvements, theme-aware styling, posting upgrades, monitoring tools,
+            and fork-specific features.
+          </p>
+          <div class="actions" data-reveal style="--d: 3" aria-label="Install links">
+            <a class="button primary" href="https://github.com/cercos/4chan-next/releases/latest/download/4chan-neXT.user.js">
+              <span class="button-prompt">$</span> Install userscript
+            </a>
+            <a class="button secondary" href="https://github.com/cercos/4chan-neXT">
+              View source
+            </a>
+          </div>
+          <p class="hero-meta" data-reveal style="--d: 4">
+            <span class="dot ok" aria-hidden="true"></span> Tampermonkey &middot; Violentmonkey &middot; Greasemonkey compatible
+          </p>
+        </div>
+
+        <figure class="hero-media" data-reveal style="--d: 3">
+          <div class="window">
+            <div class="window-bar">
+              <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="win-title">4chan-neXT.user.js</span>
+              <span class="win-status">running</span>
+            </div>
+            <img src="assets/screenshot.png" alt="4chan-neXT interface running on a thread, dark theme">
+          </div>
+        </figure>
+      </section>
+
+      <section class="quick-links" aria-label="Project links">
+        <a href="https://github.com/cercos/4chan-next/releases/latest/download/4chan-neXT.min.user.js">
+          <span class="ql-key">// minified build</span>
+          <strong>Latest release download</strong>
+          <span class="ql-arrow" aria-hidden="true">↳</span>
+        </a>
+        <a href="https://github.com/cercos/4chan-neXT/blob/project-neXT/CHANGELOG.md">
+          <span class="ql-key">// changelog</span>
+          <strong>Release notes &amp; fixes</strong>
+          <span class="ql-arrow" aria-hidden="true">↳</span>
+        </a>
+        <a href="https://github.com/cercos/4chan-neXT/blob/project-neXT/docs/styling-guide.md">
+          <span class="ql-key">// styling guide</span>
+          <strong>Themes &amp; custom CSS</strong>
+          <span class="ql-arrow" aria-hidden="true">↳</span>
+        </a>
+      </section>
+
+      <section class="feature-band">
+        <div class="band-copy">
+          <p class="eyebrow"><span class="prompt">&gt;</span> what it does</p>
+          <h2>Built for day-to-day browsing</h2>
+          <p class="band-lede">
+            neXT keeps the familiar 4chan&nbsp;X workflow and layers practical
+            maintenance over posting, thread watching, filtering, styling, media
+            handling, and linkification.
+          </p>
+        </div>
+        <ul class="feature-list">
+          <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Quick Reply drafts, attachment recovery, previews &amp; docking controls</li>
+          <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Thread watcher with OP thumbnails, read state &amp; hover previews</li>
+          <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Built-in themes, styling-script integration &amp; custom CSS hooks</li>
+          <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Responsive filters, catalog search, scrollbar markers &amp; gallery upgrades</li>
+        </ul>
+      </section>
+
+      <section class="future-panel">
+        <div class="panel-frame">
+          <div class="panel-copy">
+            <p class="eyebrow"><span class="prompt">&gt;</span> domain-ready</p>
+            <h2>Room to grow community tools</h2>
+            <p>
+              This stays a simple project front door for now, then can expand into
+              lightweight voting, tallying, or feedback pages if the community is
+              comfortable using the domain for it.
+            </p>
+          </div>
+          <a class="button secondary" href="https://github.com/cercos/4chan-neXT/issues/new">
+            <span class="button-prompt">+</span> Suggest an idea
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="brand-name small">4chan-ne<b>XT</b></span>
+      <span class="foot-meta">an actively maintained 4chan&nbsp;X fork</span>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="https://github.com/cercos/4chan-neXT">GitHub</a>
+        <a href="https://github.com/cercos/4chan-neXT/releases">Releases</a>
+        <a href="https://github.com/cercos/4chan-neXT/issues">Issues</a>
+      </nav>
+    </footer>
+  </body>
+</html>
