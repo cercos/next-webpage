@@ -121,31 +121,51 @@
             <p class="eyebrow"><span class="prompt">&gt;</span> compatibility</p>
             <h2>Runs where you browse</h2>
             <p class="compat-lede">
-              Install through any major userscript manager on any modern browser.
-              neXT auto-updates with every release.
+              Install through a userscript manager, or grab the native Chrome
+              extension build. neXT auto-updates with every release.
             </p>
           </div>
-          <div class="compat-grid">
-            <div class="compat-card">
-              <span class="compat-key">// userscript managers</span>
-              <ul>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Violentmonkey <em>recommended</em></li>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Tampermonkey <em>recommended</em></li>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Greasemonkey <em>1.14+</em></li>
-              </ul>
-            </div>
-            <div class="compat-card">
-              <span class="compat-key">// browsers</span>
-              <ul>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Chrome <em>90+</em></li>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Firefox <em>78+</em></li>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Edge <em>Chromium</em></li>
-                <li><span class="chk" aria-hidden="true">[<b>✓</b>]</span> Brave &middot; Opera <em>Chromium</em></li>
-              </ul>
-            </div>
+          <div class="compat-table-wrap">
+            <table class="compat-table">
+              <thead>
+                <tr>
+                  <th scope="col">// install via</th>
+                  <th scope="col">Chrome &middot; Edge &middot; Brave &middot; Opera</th>
+                  <th scope="col">Firefox 78+</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Tampermonkey <em>recommended</em></th>
+                  <td><span class="chk warn" aria-hidden="true">[<b>✓</b>]</span> <em>MV3 &middot; user-scripts toggle</em></td>
+                  <td><span class="chk" aria-hidden="true">[<b>✓</b>]</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Violentmonkey</th>
+                  <td><span class="chk no" aria-hidden="true">[<b>✗</b>]</span> <em>MV2 only</em></td>
+                  <td><span class="chk" aria-hidden="true">[<b>✓</b>]</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Greasemonkey <em>1.14+</em></th>
+                  <td><span class="chk no" aria-hidden="true">[<b>✗</b>]</span> <em>never supported</em></td>
+                  <td><span class="chk" aria-hidden="true">[<b>✓</b>]</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Native extension build <em>zero setup</em></th>
+                  <td><span class="chk" aria-hidden="true">[<b>✓</b>]</span></td>
+                  <td><span class="chk na" aria-hidden="true">[<b>&ndash;</b>]</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          <p class="compat-note warn">
+            <span class="prompt">!</span> Chrome dropped Manifest&nbsp;V2 &mdash; MV2-only managers keep working in
+            Firefox and other MV2-capable browsers. On Chromium, Tampermonkey needs
+            &ldquo;Allow user scripts&rdquo; enabled on its extension&nbsp;details page
+            (Chrome&nbsp;138+; Developer&nbsp;Mode on older builds).
+          </p>
           <p class="compat-note">
-            <span class="prompt">$</span> also ships as a native Chrome extension build
+            <span class="prompt">$</span> prefer zero setup on Chrome? use the native Chrome extension build &mdash; no userscript manager needed
           </p>
         </div>
       </section>
